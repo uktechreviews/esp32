@@ -202,7 +202,7 @@ def updateClock(posX,posY,correction):
         mins = "0"+str(actual_time[4])
     hours = actual_time[3]+1
     if hours <=9:
-        hours = "0"+str(hours)
+        hours = "0"+str(actual_time[3])
     timeDisplay = str(hours)+" "+str(mins) + ""
     date = (str(actual_time[2]) + "/" + str(actual_time[1])  + "/" + str(actual_time[0])+ "")
     cyd.display.draw_text(posX,posY+20,timeDisplay,vue, cyd.BLACK,background=cyd.DGREEN)
